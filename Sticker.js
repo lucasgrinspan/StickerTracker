@@ -5,7 +5,11 @@ fs = require('fs');
 data = fs.readFileSync('Stickers.txt', 'utf8'); 	
 var stickers = new Array(682).fill(0);
 var stickerArr = data.split(" ");
-var numStickers = stickerArr.length;
+var numStickers = 0;
+if (data != "") {
+	numStickers = stickerArr.length;
+}
+
 var percentage = 100 * numStickers / 682;
 
 document.getElementById("title-stats").innerHTML = String(numStickers) + "/" + String(682) + " (" + String(percentage.toFixed(0)) + "%)";

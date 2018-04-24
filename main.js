@@ -17,7 +17,7 @@ const {app, BrowserWindow} = require('electron')
       slashes: true
     }))
     
-    win.webContents.openDevTools({detach: true})
+    //win.webContents.openDevTools({detach: true})
     
     // Emitted when the window is closed.
     win.on('closed', () => {
