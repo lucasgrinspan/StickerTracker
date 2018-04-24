@@ -1,0 +1,199 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+}
+#toolbar {
+	margin: 0;
+	width: 100%;
+	background-color: #98a5bc;
+	-webkit-app-region: drag;
+	margin-bottom: 0;
+	padding: 0;
+	height: 37px;
+}
+#sticker-name {
+	margin-top: 0;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	margin-bottom: 0;
+}
+#title-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 67px;
+	cursor: default;
+	user-select: none;
+}
+#title {
+	margin-left: 20px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	font-weight: bold;
+	font-size: 40px;
+	user-select: none;
+	cursor: default;
+	display: inline;
+	grid-column: 1;
+}
+#title-stats {
+	font-size: 30px;
+	text-align: right;
+	margin-bottom: 14px;
+	margin-top: 25px;
+	margin-right: 15px;
+	display: inline;
+	grid-column: 2;
+}
+#wrapper-wrapper {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 154px 1fr;
+	margin-left: 20px
+}
+#display-area {
+	grid-row: 1;
+	grid-column: 2;
+	width: 1fr;
+	height: 275px;
+	/*background-color: #98a5bc;*/
+	border-radius: 3px;
+	margin-left: 10px;
+	margin-right: 12px;
+	display: grid;
+	grid-template-columns: repeat(31, 1fr);
+	grid-template-rows: repeat(22, 1fr);
+	border-collapse: collapse;
+	border: 1px solid #98a5bc;
+}
+#button-wrapper {
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 120px;
+	margin-top: 0;
+}
+#input-field {
+	display: none;
+}
+#text-container {
+	display: none;
+	overflow: auto;
+	border: 1px solid #98a5bc;
+	border-radius: 3px;
+	background-color: white;
+	height: 89px;
+	width: 144px;
+	margin-left: 2px;
+}
+#add-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	margin-top: 0;
+}
+.card-texts {
+	display: none;
+}
+#missing-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+#have-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+#repeats-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-top: 5px;
+	margin-top: 0;
+}
+.function-texts {
+	display: none;
+}
+#error-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+#warning-text {
+	font-size: 12px;
+	margin-left: 4px;
+	margin-top: 5px;
+	margin-top: 0;
+}
+.input-box {
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	width: 138px;
+	resize: none;
+	font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+    background-color: #e3e8ef;
+}
+.done-button {
+	border: 2px solid #98a5bc;
+    border-radius: 3px;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    width: 120px;
+    margin-left: -2px;
+    position: absolute;
+    bottom: 19px;
+}
+.done-button:hover {
+	background-color: #98a5bc;
+    color: white;
+    cursor: pointer;
+}
+#card-list-display-wrapper {
+	display: none;
+}
+#copy-button {
+	margin-bottom: 45px;
+	margin-left: 9px;
+	padding: 4px;
+	font-size: 12px;
+}
+/*#add-done-button {
+	display: none;
+}
+#remove-done-button {
+	display: none;
+}*/
+.button {
+    border: 2px solid #98a5bc;
+    border-radius: 3px;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 120px;
+}
+
+.button:hover {
+    background-color: #98a5bc; 
+    color: white;
+    cursor: pointer;
+}
