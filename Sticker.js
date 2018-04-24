@@ -274,7 +274,6 @@ function trade() {
 //Conducts next part of trade
 function tradeNext() {
 	var errorText = document.getElementById("error-text");
-	if (errorText.style.display == "block") {
 		//subtract the stickers traded
 		if (document.getElementById("input").value == "") {
 			clearInput();
@@ -299,18 +298,6 @@ function tradeNext() {
 		document.getElementById("add-text").innerHTML = "Now, enter the stickers that you are recieving."
 		document.getElementById("trade-next-button").style.display = "none";
 		document.getElementById("trade-done-button").style.display = "inline-block";
-	} else {
-		var blinkSpeed = 100;
-		var counter = 0;
-		errorText.style.opacity = "0";
-		var blink = setInterval(function () {
-    		errorText.style.opacity = (errorText.style.opacity == "1" ? "0" : "1");
-    		counter++;
-    		if (counter == 3) {
-    			clearInterval(blink);
-    		} 
-		}, blinkSpeed);
-	}
 }
 function tradeDone() {
 	clearInput();
